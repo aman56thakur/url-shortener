@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>URL Shortener</title>
+    <link rel="icon" href="/img/chain.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body align='center'>
+    <div class='main-content'>
+        {{>header}}
+        <form>
+            <input type="url" id="input_url" required placeholder="Paste URL here"> <br><br>
+            <button class="btn" type="submit"><span>Shorten</span></button>
+        </form>
+        <div id="div_link" style="visibility: hidden;">
+            <h3>Short Link:</h3>
+            <a id="a_link" href='#' target="_blank"></a>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/scripts/app.js"></script>
+</body>
+
+</html>
