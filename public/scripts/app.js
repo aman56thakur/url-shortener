@@ -13,8 +13,8 @@ urlForm.addEventListener('submit', (e) => {
             if (data.error) return document.getElementById('a_link').innerHTML = "Error! Couldn't generate URL"
             document.getElementById('a_link').innerHTML = data.newUrl
             document.getElementById('a_link').href = data.newUrl
+            document.getElementById('div_link').style.visibility = "visible"
         });
 
-    document.getElementById('div_link').style.visibility = "visible"
     document.getElementById("input_url").blur
 })
