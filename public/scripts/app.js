@@ -11,7 +11,7 @@ urlForm.addEventListener('submit', (e) => {
         .then(res => res.json()) // expecting a json response
         .then(data => {
             if (data.error) return document.getElementById('a_link').innerHTML = "Error! Couldn't generate URL"
-            document.getElementById('a_link').innerHTML = data.newUrl.substring(7)
+            document.getElementById('a_link').innerHTML = data.newUrl.substring(8)
             document.getElementById('a_link').href = data.newUrl
             document.getElementById('div_link').style.visibility = "visible"
         });
